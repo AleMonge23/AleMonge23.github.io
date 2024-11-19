@@ -29,7 +29,10 @@ body {
     display: flex;
     gap: 30px;
     height: 50px;
-    justify-content: cneter;
+    justify-content: center;
+}
+ul{
+    justify-content: end;
 }
 
 a{
@@ -58,35 +61,73 @@ a:hover{
 a:hover::after{
     scale: 1 1;
 }
-#logo{
-    width: 10%;
-}
-img{
-    max-width: 100%;
-}
 
 nav ul a{
+    justify-content: end;
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
 
-  /* Hero section */
-  .hero {
+.dropdown{
+    position: relative;
+}
+.submenu{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.dropdown:hover .submenu{
+    top: 100%;
+    opacity: 1;
+    pointer-events: all;;
+}
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
-    text-align: center;
-  }
+    overflow: hidden;
+}
   
-  .center-image {
-    max-width: 500px;
-    width: 100%;
+.rotating-logo {
+    position: relative;
+    z-index: 10;
+    width: 300px;
+    height: 300px;
+  }
+
+.rotating-logo gif {
     height: auto;
-    border-radius: 10px;
-  }
-  
+    width: 100%;
+    animation: spin 5s linear infinite;
+}
+
+.background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    animation: scroll-text 30s linear infinite;
+}
+
+.background-text span{
+    display: inline-block;
+    margin-right: 50px;
+}
+
   /* Footer */
   .footer {
     text-align: center;
@@ -94,4 +135,22 @@ nav ul a{
     background: black;
     font-size: 0.9rem;
   }
+
+/*ANIMACIONES*/
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    } to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scroll-text{
+    0%{
+        transform: translateX(100%)
+    } 
+    100%{
+        transform: translateX(-100%);
+    }
+}
   
