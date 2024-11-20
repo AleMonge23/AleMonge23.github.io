@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    <!--IMPORTO LOS ICONOS DE FONT AWESOME-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 </head>
@@ -40,12 +41,13 @@
               </div>
             </div>
             <a href="#">FAQS</a>
-            <a href="#">LOYALTY</a>
+            <a href="loyalty.html">LOYALTY</a>
             <a href="login.html">LOGIN</a>
           </div>
           </nav>   
     </header>
     <main>
+      <section>
         <div class="body-login">
         <div class="container" id="container">
             <div class="form-container sign-up">
@@ -95,8 +97,24 @@
                 </div>
             </div>
         </div>
-    
-        <script src="javaScript.js"></script>
-    </div>
+        </div>
+      </section>
+      <script>
+      const container = document.getElementById('container');
+      const registerBtn = document.getElementById('register');
+      const loginBtn = document.getElementById('login');
+      
+      registerBtn.addEventListener('click', () => {
+          container.classList.add("active");
+      });
+      
+      loginBtn.addEventListener('click', () => {
+          container.classList.remove("active");
+      });
+      </script>
+    </main>
+    <footer>
+      
+    </footer>
 </body>
 </html>

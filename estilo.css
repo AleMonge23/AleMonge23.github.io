@@ -7,7 +7,7 @@
     font-family: 'Montserrat', 'sans-serif';
 }
 
-
+/*ESTILOS DE LA CABECERA DE LA PAGINA*/
 header {
     display: flex;
     justify-content: flex-end;
@@ -157,6 +157,44 @@ nav {
     flex: 1;
 }
 
+/*ESTILOS DEL POPUP DE LOYALTY*/
+#modal-background {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 650px;
+    max-height: 650px;
+    position: relative; 
+  }
+
+  #modal-close {
+    color: black;
+    transition: color 0.3s;
+  
+  }
+
+  #modal-close:hover {
+    transform:scale(1.5);
+    transition: .5s ease-in-out;
+  }
+
+  /*ESTILOS DEL LOGIN*/
 .body-login {
     background: rgb(240, 236, 226);
     background: linear-gradient(90deg, rgba(240, 236, 226, 1) 0%, rgba(89, 110, 121, 1) 85%);
