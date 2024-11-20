@@ -18,40 +18,42 @@
           <a href="index.html"><img src="./logos/texto.png" style="height: 50px;"></a>
         </div>
         <div class="gif_centro">
-          <img src="./gif/gif_bueno.gif" style="height: 300px;">
+          <img src="./gif/gif_bueno.gif" style="height: 50px;">
         </div>
-        <div class="nav_links">
-          <div class="dropdown">
-            <a href="#">SHOP</a>
+        <ul class="nav_links">
+          <li class="dropdown">
+            <a href="all_products.html">SHOP</a>
             <div class="dropdown-menu information">
               <div>
                 <div class="dropdown-links">
-                  <a href="#" class="link">NEW ARRIVALS</a>
-                  <a href="#" class="link">BESTSELLERS</a>
-                  <a href="#" class="link">BACK IN STOCK</a>
-                  <a href="#" class="link">ALL PRODUCTS</a>
+                  <a href="new_arrivals.html" class="link">NEW ARRIVALS</a>
+                  <a href="bestsellers.html" class="link">BESTSELLERS</a>
+                  <a href="back_stock.html" class="link">BACK IN STOCK</a>
+                  <a href="all_products.html" class="link">ALL PRODUCTS</a>
                 </div>
               </div>
               <div>
                 <div class="dropdown-heading">CLOTHING </div>
                 <div class="dropdown-links2">
-                  <a href="#" class="link">HOODIES</a>
-                  <a href="#" class="link">SHIRTS</a>
-                  <a href="#" class="link">PANTS</a>
-                  <a href="#" class="link">ACCESSORIES</a>
+                  <a href="hoodies.html" class="link">HOODIES</a>
+                  <a href="shirts.html" class="link">SHIRTS</a>
+                  <a href="pants.html" class="link">PANTS</a>
+                  <a href="accessories" class="link">ACCESSORIES</a>
                 </div>
               </div>
             </div>
-          </div>
-          <a href="#">FAQS</a>
-          <a href="#" id="loyalty-link">LOYALTY</a>
-          <a href="login.html">LOGIN</a>
-        </div>
+          </li>
+          <li><a href="#">FAQS</a></li>
+          <li><a href="#" id="loyalty-link">LOYALTY</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
       </div>
     </nav>
   </header>
   
-  <div id="modal-background">
+  
+  <section>
+    <div id="modal-background">
     <div id="modal-content">
       <span id="modal-close" style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 20px; font-weight: bold;">&times;</span>
       <h2>SUSBCRIBE TO OUR NEWSLETTER</h2>
@@ -67,7 +69,9 @@
     <div id="modal-image">
       <img src="/c2_a5b96058-4ed0-41ac-bdaf-0a5b55f67cbb.jpg" alt="modal_image" style="height: 100px; width: 100px;"> 
     </div>
-  </div>
+    </div>
+  </section>
+  
   
  <script>
 document.getElementById('loyalty-link').addEventListener('click', function(event) {
