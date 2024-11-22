@@ -5,8 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', 'sans-serif';
+
 }
 
+body{
+    overflow-x: hidden; /*BLOQUEO DE SCROLL HORIZONTAL*/
+}
 /*ESTILOS DE LA CABECERA DE LA PAGINA*/
 header {
     display: flex;
@@ -430,3 +434,51 @@ nav {
 .container.active .toggle-right {
     transform: translateX(200%);
 }
+
+/*ESTILO BANNER DE INDEX*/
+.banner {
+    position: relative; /* Contenedor relativo para superposición */
+    display: flex;
+    width: 100%; /* Ocupa todo el ancho de la página */
+    height: 90vh; /* Ocupa casi todo el alto de la ventana */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+}
+
+.fondo-banner {
+    flex: 1; /* El fondo negro ocupa todo el espacio del contenedor */
+    position: relative; /* Se mantiene como referencia para elementos absolutos */
+}
+
+.fondo-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el fondo negro sin deformarse */
+}
+
+.texto-fondo-banner {
+    position: absolute; /* Para colocar el texto encima del fondo */
+    top: 65%; /* Centrado verticalmente */
+    right: 10%; /* Centrado horizontalmente */
+    z-index: 3; /* Asegura que esté encima del fondo negro */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.texto-fondo-banner img {
+    max-width: 80%; /* Ajusta el ancho de la imagen del texto */
+    height: auto; /* Mantiene las proporciones de la imagen */
+}
+
+
+.joker {
+    position: absolute; /* Superpone la imagen del Joker */
+    top: 50%; /* Centra verticalmente */
+    left: 20%; /* Ajusta horizontalmente */
+    transform: translate(-10%, -50%); /* Ajusta posición exacta */
+    z-index: 2; /* Encima del fondo negro */
+}
+
+.joker img {
+    height: 100%; /* Hace que la imagen sea más grande que el contenedor */
+    object-fit: cover;
+}
+
