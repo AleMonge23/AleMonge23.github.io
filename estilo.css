@@ -471,7 +471,7 @@ nav {
 
 .joker {
     position: absolute; /* Superpone la imagen del Joker */
-    top: 50%; /* Centra verticalmente */
+    top: 38%; /* Centra verticalmente */
     left: 20%; /* Ajusta horizontalmente */
     transform: translate(-10%, -50%); /* Ajusta posición exacta */
     z-index: 2; /* Encima del fondo negro */
@@ -482,3 +482,98 @@ nav {
     object-fit: cover;
 }
 
+/*ESTILO DE LA SECCION BESTSELLER DEL INDEX, PATRON PARA RESTO DE PAGINAS CON ROPA*/
+.bestsellers {
+    margin: 2px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .bestsellers-banner h2 {
+    color: #333;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .show-ropa {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre filas */
+  }
+  
+  .ropa-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px; /* Espaciado entre prendas */
+  }
+  
+  .ropa-box {
+    flex: 1;
+    max-width: 200px; 
+    height: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ropa-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .ropa-box p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .ropa-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+  }
+
+.categories {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  }
+
+  
+  .category-boxbox {
+    flex: 1; /* Todas las cajas ocupan el mismo ancho */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    overflow: hidden; /* Asegura que las imágenes no sobresalgan*/
+  }
+
+  .category-box span {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    top: 50%; /* Centra el texto verticalmente */
+    left: 50%; /* Centra el texto horizontalmente */ 
+    transform: translate(-50%, -50%);
+  }
+  
+  .category-box:hover span {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+
+  
+  
