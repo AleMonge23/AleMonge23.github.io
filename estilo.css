@@ -622,6 +622,7 @@ nav {
     filter: contrast(100%);
   }
   
+
 .inspired span{
     opacity: 0;
     position: absolute;
@@ -630,7 +631,6 @@ nav {
     transform: translate(-50%, -50%);
     font-size: 1.8rem;
     transition: opacity 0.3s;
-
 }
 
 
@@ -638,21 +638,21 @@ nav {
 
 
 .footer {
-    background-color: #000; /* Fondo negro */
+    background-color: #000;
     color: #eee;
     margin-top: 5px ;
     padding: 40px 20px;
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se ajusten */
     justify-content: space-between;
-    text-align: center; /* Centra el texto en pantallas pequeñas */
-    position: relative; /* Asegura un contexto para posicionar */
+    text-align: center;
+    position: relative; 
   }
   
   .footer-container {
     flex: 1; /* Todas las secciones tienen el mismo tamaño */
     margin: 10px;
-    min-width: 200px; /* Tamaño mínimo para responsividad */
+    min-width: 200px; /* Tamaño mínimo para responsive*/
   }
   
   .footer-container h3 {
@@ -677,7 +677,7 @@ nav {
   }
   
   .footer-container ul li a:hover {
-    color: #a3a8a8; /* Cambia de color al pasar el cursor */
+    color: #a3a8a8; 
   }
   
   .footer-container .social-media {
@@ -694,7 +694,7 @@ nav {
   }
   
   .footer-container .social-media .icon:hover {
-    color: #a3a8a8; /* Cambia de color al pasar el cursor */
+    color: #a3a8a8; 
   }
   
   .footer-container form {
@@ -716,7 +716,7 @@ nav {
   
   .footer-container form button {
     padding: 8px 15px;
-    background-color: #555555; /* Botón oscuro */
+    background-color: #555555;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -726,18 +726,17 @@ nav {
   }
   
   .footer-container form button:hover {
-    background-color: #a3a8a8; /* Cambia de color al pasar el cursor */
+    background-color: #a3a8a8;
   }
   
-  /* Estilo para footer-rights */
   .footer-rights {
     width: 100%; /* Ocupa el ancho completo */
-    text-align: center; /* Centra el texto */
-    margin-top: 20px; /* Separación superior */
+    text-align: center;
+    margin-top: 20px; /* separación con superior */
     font-size: 12px;
     color: #aaa;
-    border-top: 1px solid #333; /* Línea superior */
+    border-top: 1px solid #333; /* color de la linea superior */
     padding-top: 10px;
-    order: 1; /* Mueve al final en el flex */
+    order: 1; /* movido al final en el flex */
   }
   
