@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+  <title>CONTACT</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="cabecera">
+        <div class="logo_arriba">
+          <a href="index.html"><img src="./logos/texto.png" style="height: 50px;"></a>
+        </div>
+        <div class="gif_centro">
+          <img src="./gif/gif_bueno.gif" style="height: 300px; margin-top: 20px; padding: 5px;">
+        </div>
+        <ul class="nav_links">
+          <li class="dropdown">
+            <a href="all_products.html">SHOP</a>
+            <div class="dropdown-menu information">
+              <div>
+                <div class="dropdown-links">
+                  <a href="new_arrivals.html" class="link">NEW ARRIVALS</a>
+                  <a href="bestsellers.html" class="link">BESTSELLERS</a>
+                  <a href="all_products.html" class="link">ALL PRODUCTS</a>
+                </div>
+              </div>
+              <div>
+                <div class="dropdown-heading">CLOTHING </div>
+                <div class="dropdown-links2">
+                  <a href="hoodies.html" class="link">HOODIES</a>
+                  <a href="shirts.html" class="link">SHIRTS</a>
+                  <a href="shoes.html" class="link">SHOES</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="faqs.html">FAQS</a></li>
+          <li><a href="#" id="loyalty-link">LOYALTY</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <section>
+    <div id="modal-background">
+      <div id="modal-content">
+        <span id="modal-close"
+          style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 20px; font-weight: bold;">&times;</span>
+        <h2>SUSBCRIBE TO OUR NEWSLETTER</h2>
+        <br>
+        <form action="/submit" method="POST">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" required placeholder="EMAIL" style="padding: 2px;"><br><br>
+          <button type="submit">Unirme</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>¿Tienes algún problema? Contáctanos</h2>
+    <p>Si experimentas algún inconveniente con tu pedido o tienes una consulta, completa el siguiente formulario y nuestro equipo te responderá lo antes posible.</p>
+    <form action="#" method="POST">
+        <label for="name">Nombre completo:</label>
+        <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+        <label for="order-number">Número de pedido (opcional):</label>
+        <input type="text" id="order-number" name="order-number" placeholder="Ejemplo: #12345">
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Describe tu problema o consulta aquí..." required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+  <section class="footer">
+  <div class="footer-container">
+    <h3>SlickThreads</h3>
+    <ul class="social-media">
+      <li><a href="#" class="icon"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#" class="icon"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="#" class="icon"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="#" class="icon"><i class="fab fa-pinterest"></i></a></li>
+    </ul>
+    <p>CREATING AN INTERNATIONAL MOVEMENT, INSPIRED BY THE AESTHETICS OF THE STREET STYLE FROM WORLDWIDE CITIES.</p>
+  </div>
+  <div class="footer-container">
+    <h3>ABOUT</h3>
+    <ul>
+      <li><a href="faqs.html">FAQS</a></li>
+      <li><a href="contact.html">CONTACT FORM</a></li>
+      <li><a href="shipping.html">SHIPPING POLICY</a></li>
+      <li><a href="policy-privacy.html">PRIVACY POLICY</a></li>
+    </ul>
+  </div>
+  <div class="footer-container">
+    <h3>GET 10% OFF ON YOUR FIRST ORDER</h3>
+    <form action="/submit" method="POST">
+      <input type="email" id="email" name="email" required placeholder="EMAIL">
+      <br>
+      <button type="submit">Unirme</button>
+    </form>
+  </div>
+  <div class="footer-rights">
+    <p>&copy; 2024 SlickThreads Worldwide. All rights reserved.</p>
+  </div>
+</section>
+
+
+  <script>
+    document.getElementById('loyalty-link').addEventListener('click', function (event) {
+      event.preventDefault(); // Evita que se cargue otra página
+      document.getElementById('modal-background').style.display = 'flex';
+    });
+
+    document.getElementById('modal-close').addEventListener('click', function () {
+      document.getElementById('modal-background').style.display = 'none';
+    });
+
+    document.getElementById('modal-background').addEventListener('click', function (event) {
+      if (event.target === this) {
+        document.getElementById('modal-background').style.display = 'none';
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>
