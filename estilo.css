@@ -646,6 +646,7 @@ nav {
     background-color: #000;
     color: #eee;
     margin-top: 5px ;
+    margin-bottom: 0px;
     padding: 40px 20px;
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se ajusten */
