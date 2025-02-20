@@ -168,6 +168,13 @@ body{
   
   
   
+  hr{
+    border: 1px solid rgb(179, 179, 10);
+  }
+  h2{
+    padding-left: 55px;
+  }
+  
 
 .watch{
   height: 40vh;
@@ -175,12 +182,7 @@ body{
   color: whitesmoke;
   padding-top: 25px;
 }
-.watch h2{
-  padding-left: 55px;
-}
-.watch hr{
-  border: 1px solid rgb(179, 179, 10);
-}
+
 
 .watch-cards{
   padding: 30px;
@@ -193,7 +195,6 @@ body{
   height: 254px;
   border-radius: 20px;
   background-size: cover;
-  
   position: relative;
   overflow: hidden;
 }
@@ -228,15 +229,7 @@ body{
 
 .teorias{
   padding-top: 25px;
-  height: 50vh;
-}
-
-.teorias hr{
-  border: 1px solid rgb(179, 179, 10);
-}
-
-.teorias h2{
-  padding-left: 55px;
+  height: 80vh;
 }
 
 .teorias-container{
@@ -255,16 +248,10 @@ body{
   color: whitesmoke;
   background-color: #333131;
   border-radius: 10px;
-  transition: all 0.2s ease-in-out;
 }
 
-.teoria-card:hover hr{
-  border: 1px solid whitesmoke;
-  transition-delay: 0.1s;
-}
-
-.teoria-card:hover{
-  box-shadow: 0 0 7px 1px #a7a7a7, 0 0 7px 1px #a7a7a7;
+.teoria-card span{
+  font-weight:600;
 }
 
 .teoria-card img{
@@ -273,18 +260,58 @@ body{
   border-radius: 5px 5px 0 0;
 }
 
-.teoria-card hr{
-  border: 1px solid gray;
-  width: 24px;
-}
-
-.teoria-card hr:hover{
-  border: 1px solid whitesmoke;
-}
-
 .teoria-card a{
   text-decoration: none;
 }
+
+.explore{
+  padding-top: 25px;
+  height: 50vh;
+}
+
+.explore-container{
+  display: flex;
+  padding: 25px;
+  gap: 125px;
+  text-align: center;
+}
+
+.explore-container a{
+  text-decoration: none;
+}
+
+.explore-card {
+  width: 525px;
+  height: 300px;
+  border-radius: 20px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.explore-card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: .7rem;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.explore-card .title {
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: white;
+  text-decoration: none;
+}
+
+.explore-card:hover .explore-card-info {
+  opacity: 1;
+}
+
 
 
 @media screen and (max-width: 600px) {
