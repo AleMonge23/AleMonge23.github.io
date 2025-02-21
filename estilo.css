@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'Raleway';
+    font-family: 'DM Sans';
 }
+
 body{
   background-color: black;
   color: whitesmoke;
 }
+
 .navbar{
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +21,7 @@ body{
     background-color: black;
     padding: 15px;
     box-shadow: 0 0 5px whitesmoke;
+    font-weight:600;
 }
 
 .navbar a{
@@ -27,15 +30,18 @@ body{
 }
 
 .navbar img{
-    margin-right: 50px;
     height: 100px;
     width: auto;
+}
+
+.menu{
+  padding-right: 55px;
 }
 
 .list{
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 80px;
 }
 
 #toggler, .navbar label{
@@ -204,7 +210,6 @@ body{
 }
 
 .card-info {
-  --color: #181818;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,6 +235,7 @@ body{
 .teorias{
   padding-top: 25px;
   height: 80vh;
+  justify-content: start;
 }
 
 .teorias-container{
@@ -312,7 +318,79 @@ body{
   opacity: 1;
 }
 
+.guide{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+/*arreglar width de enlace  */
+.guide a{
+  display:inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  text-decoration: none;
+  color:whitesmoke;
+  width: 100%;
+}
 
+.guide-card{
+  display: flex;
+  width: 57%;
+  background-color:#333131;
+  border-radius: 0 10px 10px;
+}
+
+.guide-card img{
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+
+.texto-guide-card{
+  padding: 10px;
+}
+
+.busca_pelicula{
+  justify-content:start;
+}
+
+.pelicula-container{
+  display: flex;
+  padding: 25px;
+  gap: 110px;
+  text-align: center;
+  height: 50vh;
+}
+
+.pelicula-container article{
+  width: auto;
+  color: whitesmoke;
+  background-color: #333131;
+  border-radius: 10px;
+}
+
+.pelicula-container article img{
+  height: 100%;
+  border-radius: 10px;
+}
+
+.pelicula-container article hr{
+  border: 2px solid rgb(131, 130, 130);
+  border-radius: 25px;
+  width: 15%;
+  transition: all 0.2s ease-in-out;
+}
+
+.pelicula-container article:hover hr{
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.6); 
+  border-color: white;
+}
+
+article a{
+  text-decoration: none;
+  color: whitesmoke;
+}
 
 @media screen and (max-width: 600px) {
     .menu{
