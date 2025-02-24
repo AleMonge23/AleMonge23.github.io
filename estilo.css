@@ -12,6 +12,10 @@ body{
   color: whitesmoke;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .navbar{
     display: flex;
     flex-wrap: wrap;
@@ -357,9 +361,10 @@ body{
 
 .pelicula-container{
   display: flex;
-  padding: 25px;
+  padding: 35px;
   gap: 110px;
   text-align: center;
+  justify-content: center;
   height: 50vh;
 }
 
@@ -391,6 +396,16 @@ article a{
   text-decoration: none;
   color: whitesmoke;
 }
+
+.body-phantom{
+  background: url(./imagenes/peliculas/1.phantom_menace/anakin.avif) no-repeat center center fixed;
+}
+
+.content {
+  height: 200vh; /* Aumentamos la altura para forzar el desplazamiento */
+  padding: 50px;
+}
+
 
 @media screen and (max-width: 600px) {
     .menu{
