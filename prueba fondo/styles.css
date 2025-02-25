@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     color: white;
-    background: url('tu-imagen.jpg') no-repeat center center fixed;
+    background: url(../imagenes/peliculas/1.phantom_menace/anakin.avif) no-repeat center center fixed;
     background-size: cover;
     text-align: center;
     padding: 20px;

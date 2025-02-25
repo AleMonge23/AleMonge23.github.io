@@ -398,12 +398,39 @@ article a{
 }
 
 .body-phantom{
-  background: url(./imagenes/peliculas/1.phantom_menace/anakin.avif) no-repeat center center fixed;
+  font-family: Arial, sans-serif;
+    color: white;
+    background: url(./imagenes/peliculas/1.phantom_menace/anakin.avif) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 150vh;
+}
+.eras_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Aumenta la separación entre iconos */
+  background-color: black;
+  padding: 20px;
 }
 
-.content {
-  height: 200vh; /* Aumentamos la altura para forzar el desplazamiento */
-  padding: 50px;
+.eras_container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.eras_container span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.eras_info{
+  align-items: center;
+  text-align: center;
 }
 
 
