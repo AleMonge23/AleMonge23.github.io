@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Star Wars</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="./imagenes/logo_blanco_negro.png" alt=""></a>
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><i class="fa-solid fa-bars" style="color: whitesmoke;"></i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="https://www.starwars.com/databank">DATABANK</a></li>
+                <li><a href="peliculas.html">PELICULAS</a></li>
+                <li><a href="https://www.starwars.com/series">SERIES</a></li>
+                <li><a href="login.html"><i class="fa-regular fa-circle-user"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="auth-logo">
+                <span>STAR</span>
+                <span>WARS</span>
+            </div>
+        </div>
+
+        <div class="auth-form-container">
+            <h2 class="auth-title">Enter your email to continue</h2>
+            <p class="auth-description">Log in to Star Wars with your MyDisney account. If you don't have one, you'll be
+                able to create one.</p>
+
+            <form class="auth-form">
+                <div class="auth-input-group">
+                    <input type="email" id="auth-email" class="auth-input" placeholder="Email address" required>
+                </div>
+                <button type="submit" class="auth-submit">Continue</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Star Wars is part of The Walt Disney Family of Companies.</p>
+                <p>MyDisney lets you seamlessly log in to services and experiences across The Walt Disney Family of
+                    Companies, such as Disney+, ESPN, Walt Disney World</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -19,15 +19,14 @@
         <label for="toggler"><i class="fa-solid fa-bars" style="color: whitesmoke;"></i></label>
         <div class="menu">
             <ul class="list">
-                <li><a href="databank.html">DATABANK</a></li>
+                <li><a href="https://www.starwars.com/databank">DATABANK</a></li>
                 <li><a href="peliculas.html">PELICULAS</a></li>
-                <li><a href="peliculas.html">SERIES</a></li>
+                <li><a href="https://www.starwars.com/series">SERIES</a></li>
                 <li><a href="login.html"><i class="fa-regular fa-circle-user"></i></a></li>
             </ul>
         </div>
     </nav>
     <div class="CSSgal">
-
         <s id="s1"></s>
         <s id="s2"></s>
         <s id="s3"></s>
@@ -35,7 +34,7 @@
         <s id="s5"></s>
         <s id="s6"></s>
 
-        <div class="slider">
+        <div class="slider slide-1">
             <div style="background-image:url(./imagenes/peliculas/1.phantom_menace/qui_padme.jpg);">
             </div>
             <div style="background-image:url(./imagenes/peliculas/2.attack_of_the_clones/boda.jpeg);">
@@ -51,30 +50,20 @@
         </div>
 
         <div class="prevNext">
-            <div><a href="#s6"><i class="fa-solid fa-chevron-left"></i></a><a href="#s2"><i
-                        class="fa-solid fa-chevron-right"></i></a></div>
-            <div><a href="#s1"><i class="fa-solid fa-chevron-left"></i></a><a href="#s3"><i
-                        class="fa-solid fa-chevron-right"></i></a></div>
-            <div><a href="#s2"><i class="fa-solid fa-chevron-left"></i></a><a href="#s4"><i
-                        class="fa-solid fa-chevron-right"></i></a></div>
-            <div><a href="#s3"><i class="fa-solid fa-chevron-left"></i></a><a href="#s5"><i
-                        class="fa-solid fa-chevron-right"></i></a></div>
-            <div><a href="#s4"><i class="fa-solid fa-chevron-left"></i></a><a href="#s6"><i
-                        class="fa-solid fa-chevron-right"></i></a></div>
-            <div><a href="#s5"><i class="fa-solid fa-chevron-left"></i></a><a href="#s1"><i
-                        class="fa-solid fa-chevron-right"></i></a></div>
+            <div class="active">
+                <a onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></a>
+                <a onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
         </div>
-
 
         <div class="bullets">
-            <a href="#s1"></a>
-            <a href="#s2"></a>
-            <a href="#s3"></a>
-            <a href="#s4"></a>
-            <a href="#s5"></a>
-            <a href="#s6"></a>
+            <a onclick="goToSlide(1)"></a>
+            <a onclick="goToSlide(2)"></a>
+            <a onclick="goToSlide(3)"></a>
+            <a onclick="goToSlide(4)"></a>
+            <a onclick="goToSlide(5)"></a>
+            <a onclick="goToSlide(6)"></a>
         </div>
-
     </div>
 
     <section class="watch">
@@ -212,30 +201,30 @@
                     </div>
                 </div>
             </a>
-            <a href="https://www.disneyplus.com/es-es/brand/star-wars">
+            <a href="https://www.disneyplus.com/es-es/browse/page-b4e74f38-aa35-4b12-965c-93f4a931f78a">
                 <div class="explore-card" style="background-image: url(./imagenes/explora/disneyplus.jpeg);">
                     <div class="explore-card-info">
-                        <p class="title">Phantom Menace</p>
+                        <p class="title">Disney +</p>
                     </div>
                 </div>
             </a>
         </div>
         <div class="explore-container">
-            <a href="databank.html">
+            <a href="https://www.starwars.com/databank">
                 <div class="explore-card" style="background-image: url(./imagenes/explora/databank.webp);">
                     <div class="explore-card-info">
                         <p class="title">Databank</p>
                     </div>
                 </div>
             </a>
-            <a href="guia.html">
+            <a href="https://www.starwars.com/news/star-wars-movies-and-series-guide">
                 <div class="explore-card" style="background-image: url(./imagenes/peliculas/5.empire_strikes_back/luke_vader.jpeg);">
                     <div class="explore-card-info">
                         <p class="title">Guia Peliculas</p>
                     </div>
                 </div>
             </a>
-            <a href="series.html">
+            <a href="https://www.starwars.com/series">
                 <div class="explore-card" style="background-image: url(./imagenes/explora/series.webp);">
                     <div class="explore-card-info">
                         <p class="title">Series</p>
@@ -249,4 +238,51 @@
 
 </footer>
 
+<!--he aañadido este fragmento de js porque me daba muchos problemas hacer el slider con css solo, es buscado de internet y modificado con claude ai-->
+<script>
+    let currentSlide = 1;
+    const totalSlides = 6;
+
+    function updateSlider() {
+        const slider = document.querySelector('.slider');
+        const bullets = document.querySelectorAll('.bullets a');
+        
+        // Actualizar clase del slider
+        slider.className = `slider slide-${currentSlide}`;
+        
+        // Actualizar bullets activos
+        bullets.forEach((bullet, index) => {
+            bullet.classList.toggle('active', index === currentSlide - 1);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = currentSlide < totalSlides ? currentSlide + 1 : 1;
+        updateSlider();
+    }
+
+    function prevSlide() {
+        currentSlide = currentSlide > 1 ? currentSlide - 1 : totalSlides;
+        updateSlider();
+    }
+
+    function goToSlide(slideNumber) {
+        currentSlide = slideNumber;
+        updateSlider();
+    }
+
+    // Inicializar
+    updateSlider();
+
+    // Navegación con teclado (opcional)
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'ArrowRight') nextSlide();
+    });
+
+   
+    setInterval(function() {
+        nextSlide();
+    }, 5000); // Cambia cada 5 segundos
+</script>
 </html>

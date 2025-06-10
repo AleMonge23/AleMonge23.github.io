@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eras</title>
+    <title>La Línea Temporal Oficial</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
-
 <body>
     <nav class="navbar">
         <a href="index.html" class="logo"><img src="./imagenes/logo_blanco_negro.png" alt=""></a>
@@ -18,54 +13,78 @@
         <label for="toggler"><i class="fa-solid fa-bars" style="color: whitesmoke;"></i></label>
         <div class="menu">
             <ul class="list">
-                <li><a href="databank.html">DATABANK</a></li>
+                <li><a href="https://www.starwars.com/databank">DATABANK</a></li>
                 <li><a href="peliculas.html">PELICULAS</a></li>
-                <li><a href="series.html">SERIES</a></li>
+                <li><a href="https://www.starwars.com/series">SERIES</a></li>
                 <li><a href="login.html"><i class="fa-regular fa-circle-user"></i></a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="eras_container">
-        <article>
-            <a href="">
-                <img src="./imagenes/iconos/fall_of_the_jedi.png" alt="">
-                <span>Fall of the Jedi</span>
-            </a>
-        </article>
-        <article>
-            <a href="">
-                <img src="./imagenes/iconos/reign_of_empire.png" alt="">
-                <span>Reign of the Empire</span>
-            </a>
-        </article>
-        <article>
-            <a href="">
-                <img src="./imagenes/iconos/rebelion.png" alt="">
-                <span>Age of Rebellion</span>
-            </a>
-        </article>
-        <article>
-            <a href="">
-                <img src="./imagenes/iconos/new_republic.png" alt="">
-                <span>The New Republic</span>
-            </a>
-        </article>
-        <article>
-            <a href="">
-                <img src="./imagenes/iconos/reign_of_empire.png" alt="">
-                <span>Rise of the First Order</span>
-            </a>
-        </article>
-    </section>
-    <section class="eras_info">
-        <h2>La Linea Temporal Oficial</h2>
-        <div class="fall_of_jedi">
-            <p>A long forgotten menace returns as a Sith lord orchestrates a devastating conflict, plunging the galaxy
-                into full scale war with the Jedi Knights at the frontlines.</p>
-        </div>
-    </section>
+    <main>
+        <section class="eras_timeline">
+            <h2>La Línea Temporal Oficial</h2>
+            <div class="eras_grid">
+                <a href="#fall-of-the-jedi" class="era_button">Caída de los Jedi</a>
+                <a href="#reign-of-the-empire" class="era_button">Reinado del Imperio</a>
+                <a href="#age-of-rebellion" class="era_button">Era de la Rebelión</a>
+                <a href="#the-new-republic" class="era_button">La Nueva República</a>
+            </div>
+        </section>
 
+        <section class="era_section" id="fall-of-the-jedi">
+            <h3>Caída de los Jedi</h3>
+            <p>Una amenaza olvidada regresa cuando un Señor Sith orquesta un conflicto devastador, sumiendo a la galaxia en una guerra a gran escala con los Caballeros Jedi en las líneas del frente.</p>
+            <div class="media_grid">
+                <img src="https://via.placeholder.com/150?text=La+Amenaza+Fantasma" alt="La Amenaza Fantasma">
+                <img src="https://via.placeholder.com/150?text=Cuentos+de+los+Jedi" alt="Cuentos de los Jedi">
+                <img src="https://via.placeholder.com/150?text=El+Ataque+de+los+Clones" alt="El Ataque de los Clones">
+                <img src="https://via.placeholder.com/150?text=Guerras+Clon" alt="Guerras Clon">
+                <img src="https://via.placeholder.com/150?text=La+Venganza+de+los+Sith" alt="La Venganza de los Sith">
+            </div>
+        </section>
+
+        <section class="era_section" id="reign-of-the-empire">
+            <h3>Reinado del Imperio</h3>
+            <p>A través de la traición y el engaño, el Imperio Galáctico gobierna sin oposición y crece en poder militar. Unos pocos sobrevivientes Jedi se retiran a las sombras mientras son cazados sin piedad.</p>
+            <div class="media_grid">
+                <img src="https://via.placeholder.com/150?text=Cuentos+del+Submundo" alt="Cuentos del Submundo">
+                <img src="https://via.placeholder.com/150?text=Cuentos+del+Imperio" alt="Cuentos del Imperio">
+                <img src="https://via.placeholder.com/150?text=The+Bad+Batch" alt="The Bad Batch">
+                <img src="https://via.placeholder.com/150?text=Jedi+Fallen+Order" alt="Jedi Fallen Order">
+                <img src="https://via.placeholder.com/150?text=Solo" alt="Solo">
+                <img src="https://via.placeholder.com/150?text=Obi-Wan+Kenobi" alt="Obi-Wan Kenobi">
+                <img src="https://via.placeholder.com/150?text=Jedi+Survivor" alt="Jedi Survivor">
+                <img src="https://via.placeholder.com/150?text=Andor" alt="Andor">
+                <img src="https://via.placeholder.com/150?text=Rebels" alt="Rebels">
+                <img src="https://via.placeholder.com/150?text=Vader+Inmortal" alt="Vader Inmortal">
+                <img src="https://via.placeholder.com/150?text=Rogue+One" alt="Rogue One">
+            </div>
+        </section>
+
+        <section class="era_section" id="age-of-rebellion">
+            <h3>Era de la Rebelión</h3>
+            <p>Superados en número, la Rebelión se extiende por la galaxia. Héroes rebeldes avivan la tenue luz de la esperanza en una valiente resistencia contra el malvado Imperio Galáctico.</p>
+            <div class="media_grid">
+                <img src="https://via.placeholder.com/150?text=Una+Nueva+Esperanza" alt="Una Nueva Esperanza">
+                <img src="https://via.placeholder.com/150?text=El+Imperio+Contraataca" alt="El Imperio Contraataca">
+                <img src="https://via.placeholder.com/150?text=Outlaws" alt="Outlaws">
+                <img src="https://via.placeholder.com/150?text=El+Regreso+del+Jedi" alt="El Regreso del Jedi">
+                <img src="https://via.placeholder.com/150?text=Battlefront+II" alt="Battlefront II">
+                <img src="https://via.placeholder.com/150?text=Squadrons" alt="Squadrons">
+            </div>
+        </section>
+
+        <section class="era_section" id="the-new-republic">
+            <h3>La Nueva República</h3>
+            <p>El Imperio ha sido derrotado, y la emergente Nueva República enfrenta el gran desafío de reconstruir y reunir a la galaxia. Es una paz tentativa y frágil, amenazada por los restos del Imperio.</p>
+            <div class="media_grid">
+                <img src="https://via.placeholder.com/150?text=The+Mandalorian" alt="The Mandalorian">
+                <img src="https://via.placeholder.com/150?text=El+Libro+de+Boba+Fett" alt="El Libro de Boba Fett">
+                <img src="https://via.placeholder.com/150?text=Ahsoka" alt="Ahsoka">
+                <img src="https://via.placeholder.com/150?text=Skeleton+Crew" alt="Skeleton Crew">
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>
